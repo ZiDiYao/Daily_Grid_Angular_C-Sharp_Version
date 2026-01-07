@@ -29,7 +29,8 @@ internal static class User32Hooks
     internal static extern IntPtr CallNextHookEx(IntPtr hhk, int nCode, IntPtr wParam, IntPtr lParam);
 
     [DllImport("user32.dll", CharSet = CharSet.Unicode)]
-    internal static extern sbyte GetMessageW(out MSG lpMsg, IntPtr hWnd, uint wMsgFilterMin, uint wMsgFilterMax);
+    internal static extern int GetMessageW(out MSG lpMsg, IntPtr hWnd, uint wMsgFilterMin, uint wMsgFilterMax);
+
 
     [DllImport("user32.dll")]
     internal static extern bool TranslateMessage(ref MSG lpMsg);
