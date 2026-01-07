@@ -1,4 +1,6 @@
-namespace DailyGrid.Core.Services;
-public class addMouseClicksDeltaServiceImpl : addMouseClicksDeltaService {
-    
+using DailyGrid.Core.Services.Interfaces;
+public class addMouseClicksDeltaServiceImpl : addMouseClicksDeltaService
+{
+
+
 }

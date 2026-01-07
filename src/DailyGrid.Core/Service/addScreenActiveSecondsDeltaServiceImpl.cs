@@ -1,5 +1,6 @@
 namespace DailyGrid.Core.Services;
-using DailyGrid.Core.Models;
+using DailyGrid.Core.Services.Interfaces;
+
 
 public class addScreenActiveSecondsDeltaServiceImpl
 {
