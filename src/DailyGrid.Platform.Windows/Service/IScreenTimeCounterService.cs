@@ -1,4 +1,4 @@
-namespace DailyGrid.Platform.Windows.Service.Impl;
+namespace DailyGrid.Platform.Windows.Service;
 
 public interface IScreenTimeCounterService
 {
