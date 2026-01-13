@@ -1,0 +1,2 @@
+面向 Platform module 模块
+定义了 Core 需要的信息
