@@ -8,6 +8,11 @@ public class DailyRecord
     public int MouseClicksDelta { get; private set; }
     public int KeyPressesDelta { get; private set; }
 
+    public DailyRecord(DateTime timestamp)
+    {
+        Timestamp = timestamp;
+    }
+
     public DailyRecord(DateTime timestamp, int screenActiveSecondsDelta, int mouseClicksDelta, int keyPressesDelta)
     {
         Timestamp = timestamp;
@@ -23,6 +28,24 @@ public class DailyRecord
         ScreenActiveSecondsDelta = screenActiveSecondsDelta;
         MouseClicksDelta = mouseClicksDelta;
         KeyPressesDelta = keyPressesDelta;
+    }
+
+    public void AddScreenActiveSeconds(int delta)
+    {
+        if (delta < 0) throw new ArgumentOutOfRangeException(nameof(delta));
+        checked { ScreenActiveSecondsDelta += delta; }
+    }
+
+    public void AddMouseClicks(int delta)
+    {
+        if (delta < 0) throw new ArgumentOutOfRangeException(nameof(delta));
+        checked { MouseClicksDelta += delta; }
+    }
+
+    public void AddKeyPresses(int delta)
+    {
+        if (delta < 0) throw new ArgumentOutOfRangeException(nameof(delta));
+        checked { KeyPressesDelta += delta; }
     }
 
     public override string ToString()
