@@ -1,0 +1,3 @@
+用于 监听模式 Oberver module 
+比如每 0.5 S 甚至更短去发布一次
+Core module 去接听

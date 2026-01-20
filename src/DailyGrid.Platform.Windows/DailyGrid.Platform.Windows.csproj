@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DailyGrid.Core\DailyGrid.Core.csproj" />
+  </ItemGroup>
+
 </Project>
