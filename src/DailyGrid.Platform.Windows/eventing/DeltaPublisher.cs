@@ -8,8 +8,23 @@ using DailyGrid.Core.contracts;
 
 public sealed class DeltaPublisher : IAsyncDisposable
 {
+
+
     public ValueTask DisposeAsync()
     {
         throw new NotImplementedException();
     }
+
+    // constructor
+    public DeltaPublisher()
+    {
+        
+    }
+
+    public void tryPublish()
+    {
+        
+    }
+
+    // send loop async
 }
