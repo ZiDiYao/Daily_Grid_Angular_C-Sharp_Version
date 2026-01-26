@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DailyGrid.Core\DailyGrid.Core.csproj" />
+    <ProjectReference Include="..\DailyGrid.Platform.Windows\DailyGrid.Platform.Windows.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

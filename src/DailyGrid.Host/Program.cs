@@ -1,4 +1,4 @@
 ﻿#if DEBUG
-await DailyGrid.Core.eventing.EventingSmokeTest.RunAsync();
+await DailyGrid.Host.HookSmoke.RunAsync();
 return;
 #endif

@@ -59,4 +59,13 @@ internal static class User32Hooks
         public int x;
         public int y;
     }
+
+    [DllImport("user32.dll", CharSet = CharSet.Unicode)]
+    internal static extern bool PeekMessageW(
+        out MSG lpMsg,
+        IntPtr hWnd,
+        uint wMsgFilterMin,
+        uint wMsgFilterMax,
+        uint wRemoveMsg);
+
 }

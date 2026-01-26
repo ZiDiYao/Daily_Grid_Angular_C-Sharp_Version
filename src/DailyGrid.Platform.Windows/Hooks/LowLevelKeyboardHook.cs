@@ -35,8 +35,9 @@ public sealed class LowLevelKeyboardHook : IDisposable
         _hookHandle = User32Hooks.SetWindowsHookExW(
             User32Hooks.WH_KEYBOARD_LL,
             _proc,
-            hMod,
+            IntPtr.Zero,
             0);
+
 
         if (_hookHandle == IntPtr.Zero)
         {
