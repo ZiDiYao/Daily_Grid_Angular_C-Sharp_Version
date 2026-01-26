@@ -1,0 +1,3 @@
+Milestone01： 先开发 Http 版本，用于 Chrome 快速开发
+
+Milestone02： 结合 Electron 去改掉 Http 改成本地开发版本
