@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyGrid.Platform.Windows"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyGrid.Host", "src\DailyGrid.Host\DailyGrid.Host.csproj", "{9CBFE251-DC8E-41A3-AAC4-551E4F6E0D00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyGrid.Adapters", "src\DailyGrid.Adapters\DailyGrid.Adapters.csproj", "{D0D57816-34B6-4066-B830-7F6F3EFD860F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,11 +59,24 @@ Global
 		{9CBFE251-DC8E-41A3-AAC4-551E4F6E0D00}.Release|x64.Build.0 = Release|Any CPU
 		{9CBFE251-DC8E-41A3-AAC4-551E4F6E0D00}.Release|x86.ActiveCfg = Release|Any CPU
 		{9CBFE251-DC8E-41A3-AAC4-551E4F6E0D00}.Release|x86.Build.0 = Release|Any CPU
+		{D0D57816-34B6-4066-B830-7F6F3EFD860F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D57816-34B6-4066-B830-7F6F3EFD860F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D57816-34B6-4066-B830-7F6F3EFD860F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D0D57816-34B6-4066-B830-7F6F3EFD860F}.Debug|x64.Build.0 = Debug|Any CPU
+		{D0D57816-34B6-4066-B830-7F6F3EFD860F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D0D57816-34B6-4066-B830-7F6F3EFD860F}.Debug|x86.Build.0 = Debug|Any CPU
+		{D0D57816-34B6-4066-B830-7F6F3EFD860F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D57816-34B6-4066-B830-7F6F3EFD860F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D57816-34B6-4066-B830-7F6F3EFD860F}.Release|x64.ActiveCfg = Release|Any CPU
+		{D0D57816-34B6-4066-B830-7F6F3EFD860F}.Release|x64.Build.0 = Release|Any CPU
+		{D0D57816-34B6-4066-B830-7F6F3EFD860F}.Release|x86.ActiveCfg = Release|Any CPU
+		{D0D57816-34B6-4066-B830-7F6F3EFD860F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9CBFE251-DC8E-41A3-AAC4-551E4F6E0D00} = {F3D12B13-D4F4-40D9-AF8F-793A41A84E03}
+		{D0D57816-34B6-4066-B830-7F6F3EFD860F} = {F3D12B13-D4F4-40D9-AF8F-793A41A84E03}
 	EndGlobalSection
 EndGlobal
