@@ -1,0 +1,33 @@
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d8dbe6;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+button {
+  padding: 10px 14px;
+  border: 1px solid transparent;
+  background: var(--brand);
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover { background: var(--brand-2); }
+button:active { transform: translateY(1px); }

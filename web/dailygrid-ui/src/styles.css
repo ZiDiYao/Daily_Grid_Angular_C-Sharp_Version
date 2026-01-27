@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --brand: #3b82f6;      /* 蓝 */
+  --brand-2: #2563eb;    /* 深蓝 */
+  --danger: #ef4444;     /* 红 */
+  --danger-2:#dc2626;
+  --ok-bg: #ecfdf5;      /* 绿背景 */
+  --ok-border:#a7f3d0;   /* 绿边 */
+  --ring: rgba(59,130,246,0.25);
+}
+
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: #f6f7fb;
+  color: #111;
+}
