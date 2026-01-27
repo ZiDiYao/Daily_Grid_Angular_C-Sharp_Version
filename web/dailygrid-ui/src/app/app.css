@@ -1,0 +1,24 @@
+.wrapper {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e7e8ee;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+}
+
+h2 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+}
+
+.muted {
+  color: #666;
+  margin: 8px 0 0 0;
+  font-size: 14px;
+}

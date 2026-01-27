@@ -1,0 +1,58 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px;
+  border: 1px solid #e7e8ee;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background: #fff;
+  transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+}
+
+.item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.06);
+  border-color: rgba(59,130,246,0.35);
+}
+
+label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  user-select: none;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--brand); /* 现代浏览器可用：勾选变蓝 */
+}
+
+button {
+  padding: 8px 10px;
+  border: 1px solid #e0e2ea;
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* 删除按钮：红色强调 */
+button:hover {
+  border-color: rgba(239,68,68,0.35);
+  background: rgba(239,68,68,0.08);
+  color: var(--danger-2);
+}
+
+/* 完成态：淡绿提示 */
+.done {
+  opacity: 0.9;
+  background: var(--ok-bg);
+  border-color: var(--ok-border);
+}
+
+.done label {
+  text-decoration: line-through;
+  color: #14532d;
+}
