@@ -1,13 +1,13 @@
 <div class="wrapper">
   <div class="card">
-    <h2>Todo List</h2>
+    <h2>ZiDi's Todo List</h2>
 
     <app-todo-form (add)="onAdd($event)"></app-todo-form>
 
     <p class="muted" *ngIf="todos.length === 0">No todos yet.</p>
 
     <app-todo-item
-      *ngFor="let t of todos; trackBy: trackById"
+      *ngFor="let t of todos"
       [todo]="t"
       (toggle)="onToggle($event)"
       (remove)="onRemove($event)"
