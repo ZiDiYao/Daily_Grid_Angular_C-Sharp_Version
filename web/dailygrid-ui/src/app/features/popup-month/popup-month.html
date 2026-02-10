@@ -1,0 +1,71 @@
+<div class="popup-root">
+  <header class="popup-header">
+    <div class="title">DailyGrid</div>
+    <button class="ghost-btn" type="button" (click)="refreshMock()">Refresh</button>
+  </header>
+
+  <div class="snap-scroll" aria-label="DailyGrid popup pages">
+    <section class="snap-page card">
+      <div class="card-title">Weighted Activity (Month)</div>
+
+      <div class="week-labels" aria-hidden="true">
+        <span *ngFor="let w of weekLabels">{{ w }}</span>
+      </div>
+
+      <div class="grid-wrap" role="grid" aria-label="Monthly weighted activity grid">
+        <button
+          class="cell"
+          type="button"
+          *ngFor="let c of data.cells; trackBy: trackByDate"
+          [class.dim]="!c.inCurrentMonth"
+          [ngClass]="'lv-' + c.level"
+          [title]="c.date + ' | score: ' + c.score"
+          (click)="onCellClick(c)"
+          (keydown)="onCellKeydown($event, c)"
+          [attr.aria-label]="c.date + ', score ' + c.score"
+        >
+          <span class="day">{{ c.dayOfMonth }}</span>
+        </button>
+      </div>
+
+      <div class="legend">
+        <span>Low</span>
+        <div class="legend-cells" aria-hidden="true">
+          <span class="legend-cell lv-0"></span>
+          <span class="legend-cell lv-1"></span>
+          <span class="legend-cell lv-2"></span>
+          <span class="legend-cell lv-3"></span>
+          <span class="legend-cell lv-4"></span>
+        </div>
+        <span>High</span>
+      </div>
+    </section>
+
+    <section class="snap-page card">
+      <div class="card-title">Top 5 Apps (This Month)</div>
+
+      <ul class="top-list">
+        <li *ngFor="let app of data.topApps; let i = index">
+          <div class="row-head">
+            <div class="name-wrap">
+              <span class="rank">#{{ i + 1 }}</span>
+              <span class="name" [title]="app.name">{{ app.name }}</span>
+            </div>
+            <span class="minutes">{{ app.minutes }}m</span>
+          </div>
+
+          <div class="bar-track" [attr.aria-label]="app.name + ' usage bar'">
+            <div
+              class="bar-fill"
+              [style.width.%]="getUsagePercent(app.minutes)"
+              role="progressbar"
+              [attr.aria-valuemin]="0"
+              [attr.aria-valuemax]="100"
+              [attr.aria-valuenow]="getUsagePercent(app.minutes)"
+            ></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>

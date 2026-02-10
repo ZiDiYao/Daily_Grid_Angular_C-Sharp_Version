@@ -1,8 +1,0 @@
-<div class="item" [class.done]="todo().done">
-  <label>
-    <input type="checkbox" [checked]="todo().done" (change)="onToggle()" />
-    {{ todo().text }}
-  </label>
-
-  <button type="button" (click)="onRemove()">Delete</button>
-</div>
