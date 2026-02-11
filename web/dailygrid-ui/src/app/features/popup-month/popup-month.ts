@@ -10,6 +10,7 @@ import { POPUP_MONTH_MOCK } from './mock/popup-month.mock';
   templateUrl: './popup-month.html',
   styleUrls: ['./popup-month.css'] 
 })
+
 export class PopupMonth {
   data: PopupMonthData = POPUP_MONTH_MOCK;
   weekLabels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
