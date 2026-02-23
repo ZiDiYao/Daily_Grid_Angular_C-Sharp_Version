@@ -12,7 +12,7 @@ export interface TopAppItem {
 }
 
 export interface PopupMonthData {
-  monthLabel: string;      // e.g. 2026-02
+  monthLabel: string;      // 2026-02
   generatedAt: string;     // ISO datetime
   cells: DayCell[];        // 42 cells (6 weeks * 7 days)
   topApps: TopAppItem[];   // top 5
